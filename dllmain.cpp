@@ -367,7 +367,7 @@ namespace {
             for (uint32_t i = 0; i < 2; i++) {
                 // Our gaze vector is normalized.
                 // This works well-enough.
-                outInfo->GazeTan[i] = {gaze.x, gaze.y};
+                outInfo->GazeTan[i] = {gaze.x, -gaze.y-0.5f};
             }
 
             if (isValid) {
